@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fce8d58f-d38e-4af2-81df-2225a4c96d20" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project01.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/logged.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +21,7 @@
     <execution />
   </component>
   <component name="ExportToHTMLSettings">
-    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../project01\exportToHTML" />
+    <option name="OUTPUT_DIRECTORY" value="$USER_HOME$/project01\exportToHTML" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -96,6 +102,10 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
       <path value="$PROJECT_DIR$/vendor/webimpress/safe-writer" />
       <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/intl" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hUtVmtLgiZJBvD5bKcCMB5LWCR" />
@@ -107,7 +117,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rest_api" />
+    <property name="last_opened_file_path" value="$USER_HOME$/rest_api" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -121,7 +131,8 @@
       <updated>1600077524668</updated>
       <workItem from="1600077525820" duration="16529000" />
       <workItem from="1600155675771" duration="7877000" />
-      <workItem from="1600242809077" duration="8458000" />
+      <workItem from="1600242809077" duration="9719000" />
+      <workItem from="1600330447571" duration="12178000" />
     </task>
     <task id="LOCAL-00001" summary="Upgraded MakerBundle &amp; added Security">
       <created>1600079399881</created>
@@ -144,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600254430774</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Unnecessary file removed">
+      <created>1600254704623</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600254704623</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,13 +172,18 @@
     <MESSAGE value="Upgraded MakerBundle &amp; added Security" />
     <MESSAGE value="Logging in and logging out were enabled." />
     <MESSAGE value="Missing files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Missing files" />
+    <MESSAGE value="Unnecessary file removed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unnecessary file removed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="344" y="260" key="#Composer" timestamp="1600077549357">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
     <state x="344" y="260" key="#Composer/0.0.1067.760@0.0.1067.760" timestamp="1600077549357" />
+    <state x="0" y="36" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600345650355">
+      <screen x="0" y="0" width="1067" height="760" />
+    </state>
+    <state x="0" y="36" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1067.760@0.0.1067.760" timestamp="1600345650355" />
     <state x="339" y="63" key="#com.intellij.ide.util.MemberChooser" timestamp="1600177565985">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
@@ -169,18 +192,18 @@
       <screen x="0" y="0" width="1067" height="760" />
     </state>
     <state x="264" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1067.760@0.0.1067.760" timestamp="1600156051254" />
-    <state x="157" y="0" key="CommitChangelistDialog2" timestamp="1600254429300">
+    <state x="157" y="0" key="CommitChangelistDialog2" timestamp="1600254703590">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state x="157" y="0" key="CommitChangelistDialog2/0.0.1067.760@0.0.1067.760" timestamp="1600254429300" />
-    <state x="314" y="122" key="FileChooserDialogImpl" timestamp="1600182839592">
+    <state x="157" y="0" key="CommitChangelistDialog2/0.0.1067.760@0.0.1067.760" timestamp="1600254703590" />
+    <state x="314" y="122" key="FileChooserDialogImpl" timestamp="1600332525832">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state x="314" y="122" key="FileChooserDialogImpl/0.0.1067.760@0.0.1067.760" timestamp="1600182839592" />
-    <state x="413" y="279" key="Github.ShareDialog" timestamp="1600254146442">
+    <state x="314" y="122" key="FileChooserDialogImpl/0.0.1067.760@0.0.1067.760" timestamp="1600332525832" />
+    <state x="413" y="279" key="Github.ShareDialog" timestamp="1600330920577">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state x="413" y="279" key="Github.ShareDialog/0.0.1067.760@0.0.1067.760" timestamp="1600254146442" />
+    <state x="413" y="279" key="Github.ShareDialog/0.0.1067.760@0.0.1067.760" timestamp="1600330920577" />
     <state x="337" y="79" key="Github.UntrackedFilesDialog" timestamp="1600078059182">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
@@ -205,9 +228,13 @@
       <screen x="0" y="0" width="1067" height="760" />
     </state>
     <state x="351" y="295" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1067.760@0.0.1067.760" timestamp="1600254092597" />
-    <state x="196" y="81" width="672" height="678" key="search.everywhere.popup" timestamp="1600178631067">
+    <state x="190" y="171" key="run.anything.popup" timestamp="1600346048498">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state x="196" y="81" width="672" height="678" key="search.everywhere.popup/0.0.1067.760@0.0.1067.760" timestamp="1600178631067" />
+    <state x="190" y="171" key="run.anything.popup/0.0.1067.760@0.0.1067.760" timestamp="1600346048498" />
+    <state x="196" y="81" width="672" height="678" key="search.everywhere.popup" timestamp="1600348000594">
+      <screen x="0" y="0" width="1067" height="760" />
+    </state>
+    <state x="196" y="81" width="672" height="678" key="search.everywhere.popup/0.0.1067.760@0.0.1067.760" timestamp="1600348000594" />
   </component>
 </project>
