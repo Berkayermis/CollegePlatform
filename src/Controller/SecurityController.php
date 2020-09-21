@@ -2,8 +2,9 @@
 
 namespace App\Controller;
 
-
+use App\Repository\UserRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
@@ -30,7 +31,10 @@ class SecurityController extends AbstractController
      * @return Response
      */
     public function index(){
-        return $this->render('base.html.twig');
+
+       return $this->render('homepage/homepage.html.twig',[
+
+       ]);
     }
 
     /**
@@ -38,6 +42,19 @@ class SecurityController extends AbstractController
      */
     public function logout(){
 
+    }
+
+    /**
+     * Returns a JSON response
+     *
+     * @param array $data
+     * @param int $status
+     * @param array $headers
+     * @return JsonResponse
+     */
+    public function response(array $data, $status = 200, $headers = [])
+    {
+        return new JsonResponse($data, $status, $headers);
     }
 
 }

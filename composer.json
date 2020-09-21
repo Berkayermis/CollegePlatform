@@ -21,7 +21,8 @@
         "symfony/var-dumper": "5.1.*",
         "symfony/yaml": "5.1.*",
       "ext-cassandra": "*",
-      "ext-couchbase": "*"
+      "ext-couchbase": "*",
+      "ext-json": "*"
     },
     "require-dev": {
         "symfony/maker-bundle": "^1.21",

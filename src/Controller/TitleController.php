@@ -6,6 +6,7 @@ use App\Entity\Title;
 use App\Form\TitleType;
 use DateTimeImmutable;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -18,8 +19,6 @@ class TitleController extends AbstractController
      * @return Response
      */
     public function new(Request $request){
-
-
 
         $title = new Title();
         $title->setTitle('');
@@ -37,8 +36,36 @@ class TitleController extends AbstractController
             return $this->redirectToRoute('app_form');
         }
         return $this->render('title/index.html.twig',[
-            'title_form' => $form->createView()
+            'title_form' => $form->createView(),
+            'titleOfForm' => $title->getTitle()
         ]);
 
     }
+
+
+
+    /**
+     * @Route ("/titles/{id}",name="all_titles",methods={"GET"})
+     * @param $id
+     * @return JsonResponse
+     */
+    public function getTitles($id){
+        $data = $this->getDoctrine()->getRepository(Title::class);
+        return $this->response((array)$data->find($id)->getTitle());
+    }
+
+
+    /**
+     * Returns a JSON response
+     *
+     * @param array $data
+     * @param int $status
+     * @param array $headers
+     * @return JsonResponse
+     */
+    public function response(array $data, $status = 200, $headers = [])
+    {
+        return new JsonResponse($data, $status, $headers);
+    }
+
 }

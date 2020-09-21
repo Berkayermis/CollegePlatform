@@ -1,15 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:github-00" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fce8d58f-d38e-4af2-81df-2225a4c96d20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project01.iml" afterDir="false" />
+    <list default="true" id="fce8d58f-d38e-4af2-81df-2225a4c96d20" name="Default Changelist" comment="Symfony form installed and configured,Relatinship between user and titles was provided.">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TitleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TitleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Title.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Title.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/TitleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/TitleType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/title/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/title/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +53,14 @@
     <execution />
   </component>
   <component name="ExportToHTMLSettings">
-    <option name="OUTPUT_DIRECTORY" value="$USER_HOME$/project01\exportToHTML" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../project01\exportToHTML" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Berkay &lt;67913214+berkayermis@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -117,7 +154,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/rest_api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rest_api" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -132,7 +169,10 @@
       <workItem from="1600077525820" duration="16529000" />
       <workItem from="1600155675771" duration="7877000" />
       <workItem from="1600242809077" duration="9719000" />
-      <workItem from="1600330447571" duration="12178000" />
+      <workItem from="1600330447571" duration="14992000" />
+      <workItem from="1600356214040" duration="58000" />
+      <workItem from="1600417754609" duration="10393000" />
+      <workItem from="1600684302867" duration="5367000" />
     </task>
     <task id="LOCAL-00001" summary="Upgraded MakerBundle &amp; added Security">
       <created>1600079399881</created>
@@ -162,18 +202,48 @@
       <option name="project" value="LOCAL" />
       <updated>1600254704623</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Symfony form installed and configured,Relatinship between user and titles was provided.">
+      <created>1600352130127</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600352130127</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Upgraded MakerBundle &amp; added Security" />
     <MESSAGE value="Logging in and logging out were enabled." />
     <MESSAGE value="Missing files" />
     <MESSAGE value="Unnecessary file removed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Unnecessary file removed" />
+    <MESSAGE value="Symfony form installed and configured,Relatinship between user and titles was provided." />
+    <option name="LAST_COMMIT_MESSAGE" value="Symfony form installed and configured,Relatinship between user and titles was provided." />
   </component>
   <component name="WindowStateProjectService">
     <state x="344" y="260" key="#Composer" timestamp="1600077549357">
@@ -184,22 +254,26 @@
       <screen x="0" y="0" width="1067" height="760" />
     </state>
     <state x="0" y="36" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1067.760@0.0.1067.760" timestamp="1600345650355" />
-    <state x="339" y="63" key="#com.intellij.ide.util.MemberChooser" timestamp="1600177565985">
+    <state x="339" y="63" key="#com.intellij.ide.util.MemberChooser" timestamp="1600429332627">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state x="339" y="63" key="#com.intellij.ide.util.MemberChooser/0.0.1067.760@0.0.1067.760" timestamp="1600177565985" />
-    <state x="264" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600156051254">
+    <state x="339" y="63" key="#com.intellij.ide.util.MemberChooser/0.0.1067.760@0.0.1067.760" timestamp="1600429332627" />
+    <state x="264" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600427707568">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state x="264" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1067.760@0.0.1067.760" timestamp="1600156051254" />
-    <state x="157" y="0" key="CommitChangelistDialog2" timestamp="1600254703590">
+    <state x="264" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1067.760@0.0.1067.760" timestamp="1600427707568" />
+    <state x="53" y="0" key="CommitChangelistDialog2" timestamp="1600352403921">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state x="157" y="0" key="CommitChangelistDialog2/0.0.1067.760@0.0.1067.760" timestamp="1600254703590" />
-    <state x="314" y="122" key="FileChooserDialogImpl" timestamp="1600332525832">
+    <state x="53" y="0" key="CommitChangelistDialog2/0.0.1067.760@0.0.1067.760" timestamp="1600352403921" />
+    <state x="93" y="93" width="881" height="575" key="DiffContextDialog" timestamp="1600352291053">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state x="314" y="122" key="FileChooserDialogImpl/0.0.1067.760@0.0.1067.760" timestamp="1600332525832" />
+    <state x="93" y="93" width="881" height="575" key="DiffContextDialog/0.0.1067.760@0.0.1067.760" timestamp="1600352291053" />
+    <state x="314" y="122" key="FileChooserDialogImpl" timestamp="1600427655341">
+      <screen x="0" y="0" width="1067" height="760" />
+    </state>
+    <state x="314" y="122" key="FileChooserDialogImpl/0.0.1067.760@0.0.1067.760" timestamp="1600427655341" />
     <state x="413" y="279" key="Github.ShareDialog" timestamp="1600330920577">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
@@ -216,18 +290,18 @@
       <screen x="0" y="0" width="1067" height="760" />
     </state>
     <state x="368" y="101" key="RollbackChangesDialog/0.0.1067.760@0.0.1067.760" timestamp="1600176174180" />
-    <state x="126" y="114" key="Vcs.Push.Dialog.v2" timestamp="1600254038971">
+    <state x="126" y="114" key="Vcs.Push.Dialog.v2" timestamp="1600352258207">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state x="126" y="114" key="Vcs.Push.Dialog.v2/0.0.1067.760@0.0.1067.760" timestamp="1600254038971" />
+    <state x="126" y="114" key="Vcs.Push.Dialog.v2/0.0.1067.760@0.0.1067.760" timestamp="1600352258207" />
     <state x="93" y="93" width="881" height="575" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600176447707">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
     <state x="93" y="93" width="881" height="575" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1067.760@0.0.1067.760" timestamp="1600176447707" />
-    <state x="351" y="295" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600254092597">
+    <state x="351" y="295" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600352414267">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state x="351" y="295" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1067.760@0.0.1067.760" timestamp="1600254092597" />
+    <state x="351" y="295" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1067.760@0.0.1067.760" timestamp="1600352414267" />
     <state x="190" y="171" key="run.anything.popup" timestamp="1600346048498">
       <screen x="0" y="0" width="1067" height="760" />
     </state>

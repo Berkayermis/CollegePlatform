@@ -4,8 +4,8 @@ namespace App\Form;
 
 use App\Entity\Title;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\DataTransformer\DateTimeImmutableToDateTimeTransformer;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -20,7 +20,7 @@ class TitleType extends AbstractType
                     'placeholder' => 'Enter the title..',
                 ],
             ])
-            ->add('body', TextType::class,[
+            ->add('body', TextareaType::class,[
                 'attr' => [
                     'placeholder' => 'Type the content..'
                 ],

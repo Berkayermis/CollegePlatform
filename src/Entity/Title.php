@@ -5,11 +5,12 @@ namespace App\Entity;
 use App\Repository\TitleRepository;
 use DateTimeInterface;
 use Doctrine\ORM\Mapping as ORM;
+use JsonSerializable;
 
 /**
  * @ORM\Entity(repositoryClass=TitleRepository::class)
  */
-class Title
+class Title implements JsonSerializable
 {
     /**
      * @ORM\Id
@@ -90,5 +91,16 @@ class Title
         $this->userID = $userID;
 
         return $this;
+    }
+
+
+    public function jsonSerialize()
+    {
+        return [
+            "title" => $this->getTitle(),
+            "body" => $this->getBody(),
+            "DateTime"=>$this->getDateTime(),
+            "userID" => $this->getUserID()
+        ];
     }
 }

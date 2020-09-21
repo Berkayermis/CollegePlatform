@@ -1,0 +1,141 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"fce8d58f-d38e-4af2-81df-2225a4c96d20\" name=\"Default Changelist\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/php.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/php.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/project01.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/project01.iml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/composer.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/composer.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/composer.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/composer.lock\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Entity/User.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Entity/User.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/symfony.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/symfony.lock\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/templates/base.html.twig\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/templates/base.html.twig\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\" doNotAsk=\"true\" synchronizationState=\"SYNCHRONIZE\">\r\n    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>\r\n    <execution />\r\n  </component>\r\n  <component name=\"ExportToHTMLSettings\">\r\n    <option name=\"OUTPUT_DIRECTORY\" value=\"$USER_HOME$/project01\\exportToHTML\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"PhpWorkspaceProjectConfiguration\">\r\n    <include_path>\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/var-dumper\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/config\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-php73\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/dotenv\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/psr/cache\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/framework-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/psr/log\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/psr/event-dispatcher\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/string\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/psr/container\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/http-kernel\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/error-handler\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/dependency-injection\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/deprecation-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/flex\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/finder\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/composer\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/cache\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/cache-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/service-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-mbstring\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/event-dispatcher\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/routing\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/yaml\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/var-exporter\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/http-foundation\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/console\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/filesystem\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-php80\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/twig/twig\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/inflector\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/stopwatch\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/monolog-bridge\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/twig-bridge\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/translation-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/monolog-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/twig-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/web-profiler-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/maker-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/debug-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/nikic/php-parser\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/monolog/monolog\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/sensio/framework-extra-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/annotations\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/lexer\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/security-guard\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/security-http\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/security-csrf\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/security-core\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/property-info\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/property-access\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/security-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/doctrine-bridge\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/laminas/laminas-code\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/cache\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/laminas/laminas-eventmanager\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/sql-formatter\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/event-manager\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/doctrine-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/reflection\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/collections\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/instantiator\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/common\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/migrations\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/orm\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/dbal\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/persistence\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/webimpress/safe-writer\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/ocramius/proxy-manager\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/form\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/options-resolver\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/intl\" />\r\n    </include_path>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1hUtVmtLgiZJBvD5bKcCMB5LWCR\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$USER_HOME$/rest_api\" />\r\n    <property name=\"php.override.implement.member.chooser.php.doc\" value=\"NONE\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"fce8d58f-d38e-4af2-81df-2225a4c96d20\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1600077524668</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1600077524668</updated>\r\n      <workItem from=\"1600077525820\" duration=\"16529000\" />\r\n      <workItem from=\"1600155675771\" duration=\"7877000\" />\r\n      <workItem from=\"1600242809077\" duration=\"9719000\" />\r\n      <workItem from=\"1600330447571\" duration=\"12178000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Upgraded MakerBundle &amp; added Security\">\r\n      <created>1600079399881</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1600079399881</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Logging in and logging out were enabled.\">\r\n      <created>1600250174075</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1600250174075</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Missing files\">\r\n      <created>1600254430774</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1600254430774</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Unnecessary file removed\">\r\n      <created>1600254704623</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1600254704623</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Upgraded MakerBundle &amp; added Security\" />\r\n    <MESSAGE value=\"Logging in and logging out were enabled.\" />\r\n    <MESSAGE value=\"Missing files\" />\r\n    <MESSAGE value=\"Unnecessary file removed\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Unnecessary file removed\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"344\" y=\"260\" key=\"#Composer\" timestamp=\"1600077549357\">\r\n      <screen x=\"0\" y=\"0\" width=\"1067\" height=\"760\" />\r\n    </state>\r\n    <state x=\"344\" y=\"260\" key=\"#Composer/0.0.1067.760@0.0.1067.760\" timestamp=\"1600077549357\" />\r\n    <state x=\"0\" y=\"36\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog\" timestamp=\"1600345650355\">\r\n      <screen x=\"0\" y=\"0\" width=\"1067\" height=\"760\" />\r\n    </state>\r\n    <state x=\"0\" y=\"36\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1067.760@0.0.1067.760\" timestamp=\"1600345650355\" />\r\n    <state x=\"339\" y=\"63\" key=\"#com.intellij.ide.util.MemberChooser\" timestamp=\"1600177565985\">\r\n      <screen x=\"0\" y=\"0\" width=\"1067\" height=\"760\" />\r\n    </state>\r\n    <state x=\"339\" y=\"63\" key=\"#com.intellij.ide.util.MemberChooser/0.0.1067.760@0.0.1067.760\" timestamp=\"1600177565985\" />\r\n    <state x=\"264\" y=\"136\" key=\"#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog\" timestamp=\"1600156051254\">\r\n      <screen x=\"0\" y=\"0\" width=\"1067\" height=\"760\" />\r\n    </state>\r\n    <state x=\"264\" y=\"136\" key=\"#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1067.760@0.0.1067.760\" timestamp=\"1600156051254\" />\r\n    <state x=\"157\" y=\"0\" key=\"CommitChangelistDialog2\" timestamp=\"1600254703590\">\r\n      <screen x=\"0\" y=\"0\" width=\"1067\" height=\"760\" />\r\n    </state>\r\n    <state x=\"157\" y=\"0\" key=\"CommitChangelistDialog2/0.0.1067.760@0.0.1067.760\" timestamp=\"1600254703590\" />\r\n    <state x=\"314\" y=\"122\" key=\"FileChooserDialogImpl\" timestamp=\"1600332525832\">\r\n      <screen x=\"0\" y=\"0\" width=\"1067\" height=\"760\" />\r\n    </state>\r\n    <state x=\"314\" y=\"122\" key=\"FileChooserDialogImpl/0.0.1067.760@0.0.1067.760\" timestamp=\"1600332525832\" />\r\n    <state x=\"413\" y=\"279\" key=\"Github.ShareDialog\" timestamp=\"1600330920577\">\r\n      <screen x=\"0\" y=\"0\" width=\"1067\" height=\"760\" />\r\n    </state>\r\n    <state x=\"413\" y=\"279\" key=\"Github.ShareDialog/0.0.1067.760@0.0.1067.760\" timestamp=\"1600330920577\" />\r\n    <state x=\"337\" y=\"79\" key=\"Github.UntrackedFilesDialog\" timestamp=\"1600078059182\">\r\n      <screen x=\"0\" y=\"0\" width=\"1067\" height=\"760\" />\r\n    </state>\r\n    <state x=\"337\" y=\"79\" key=\"Github.UntrackedFilesDialog/0.0.1067.760@0.0.1067.760\" timestamp=\"1600078059182\" />\r\n    <state x=\"336\" y=\"104\" key=\"NewPhpClassDialog\" timestamp=\"1600095441447\">\r\n      <screen x=\"0\" y=\"0\" width=\"1067\" height=\"760\" />\r\n    </state>\r\n    <state x=\"336\" y=\"104\" key=\"NewPhpClassDialog/0.0.1067.760@0.0.1067.760\" timestamp=\"1600095441447\" />\r\n    <state x=\"368\" y=\"101\" key=\"RollbackChangesDialog\" timestamp=\"1600176174180\">\r\n      <screen x=\"0\" y=\"0\" width=\"1067\" height=\"760\" />\r\n    </state>\r\n    <state x=\"368\" y=\"101\" key=\"RollbackChangesDialog/0.0.1067.760@0.0.1067.760\" timestamp=\"1600176174180\" />\r\n    <state x=\"126\" y=\"114\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1600254038971\">\r\n      <screen x=\"0\" y=\"0\" width=\"1067\" height=\"760\" />\r\n    </state>\r\n    <state x=\"126\" y=\"114\" key=\"Vcs.Push.Dialog.v2/0.0.1067.760@0.0.1067.760\" timestamp=\"1600254038971\" />\r\n    <state x=\"93\" y=\"93\" width=\"881\" height=\"575\" maximized=\"true\" key=\"com.intellij.history.integration.ui.views.FileHistoryDialog\" timestamp=\"1600176447707\">\r\n      <screen x=\"0\" y=\"0\" width=\"1067\" height=\"760\" />\r\n    </state>\r\n    <state x=\"93\" y=\"93\" width=\"881\" height=\"575\" maximized=\"true\" key=\"com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1067.760@0.0.1067.760\" timestamp=\"1600176447707\" />\r\n    <state x=\"351\" y=\"295\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2\" timestamp=\"1600254092597\">\r\n      <screen x=\"0\" y=\"0\" width=\"1067\" height=\"760\" />\r\n    </state>\r\n    <state x=\"351\" y=\"295\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1067.760@0.0.1067.760\" timestamp=\"1600254092597\" />\r\n    <state x=\"190\" y=\"171\" key=\"run.anything.popup\" timestamp=\"1600346048498\">\r\n      <screen x=\"0\" y=\"0\" width=\"1067\" height=\"760\" />\r\n    </state>\r\n    <state x=\"190\" y=\"171\" key=\"run.anything.popup/0.0.1067.760@0.0.1067.760\" timestamp=\"1600346048498\" />\r\n    <state x=\"196\" y=\"81\" width=\"672\" height=\"678\" key=\"search.everywhere.popup\" timestamp=\"1600348000594\">\r\n      <screen x=\"0\" y=\"0\" width=\"1067\" height=\"760\" />\r\n    </state>\r\n    <state x=\"196\" y=\"81\" width=\"672\" height=\"678\" key=\"search.everywhere.popup/0.0.1067.760@0.0.1067.760\" timestamp=\"1600348000594\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision bea16baeb243144f873691f1923f9b5b16ff87eb)
++++ .idea/workspace.xml	(date 1600352291070)
+@@ -1,16 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="fce8d58f-d38e-4af2-81df-2225a4c96d20" name="Default Changelist" comment="">
+-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/project01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project01.iml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+-    </list>
++    <list default="true" id="fce8d58f-d38e-4af2-81df-2225a4c96d20" name="Default Changelist" comment="" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -21,9 +12,14 @@
+     <execution />
+   </component>
+   <component name="ExportToHTMLSettings">
+-    <option name="OUTPUT_DIRECTORY" value="$USER_HOME$/project01\exportToHTML" />
++    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../project01\exportToHTML" />
+   </component>
+   <component name="Git.Settings">
++    <option name="PREVIOUS_COMMIT_AUTHORS">
++      <list>
++        <option value="Berkay &lt;67913214+berkayermis@users.noreply.github.com&gt;" />
++      </list>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="PhpWorkspaceProjectConfiguration">
+@@ -117,7 +113,7 @@
+   <component name="PropertiesComponent">
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+-    <property name="last_opened_file_path" value="$USER_HOME$/rest_api" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rest_api" />
+     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+     <property name="vue.rearranger.settings.migration" value="true" />
+   </component>
+@@ -132,7 +128,7 @@
+       <workItem from="1600077525820" duration="16529000" />
+       <workItem from="1600155675771" duration="7877000" />
+       <workItem from="1600242809077" duration="9719000" />
+-      <workItem from="1600330447571" duration="12178000" />
++      <workItem from="1600330447571" duration="12493000" />
+     </task>
+     <task id="LOCAL-00001" summary="Upgraded MakerBundle &amp; added Security">
+       <created>1600079399881</created>
+@@ -162,18 +158,37 @@
+       <option name="project" value="LOCAL" />
+       <updated>1600254704623</updated>
+     </task>
+-    <option name="localTasksCounter" value="5" />
++    <task id="LOCAL-00005" summary="Symfony form installed and configured,Relatinship between user and titles was provided.">
++      <created>1600352130127</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1600352130127</updated>
++    </task>
++    <option name="localTasksCounter" value="6" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Upgraded MakerBundle &amp; added Security" />
+     <MESSAGE value="Logging in and logging out were enabled." />
+     <MESSAGE value="Missing files" />
+     <MESSAGE value="Unnecessary file removed" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Unnecessary file removed" />
++    <MESSAGE value="Symfony form installed and configured,Relatinship between user and titles was provided." />
++    <option name="LAST_COMMIT_MESSAGE" value="Symfony form installed and configured,Relatinship between user and titles was provided." />
+   </component>
+   <component name="WindowStateProjectService">
+     <state x="344" y="260" key="#Composer" timestamp="1600077549357">
+@@ -192,10 +207,14 @@
+       <screen x="0" y="0" width="1067" height="760" />
+     </state>
+     <state x="264" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1067.760@0.0.1067.760" timestamp="1600156051254" />
+-    <state x="157" y="0" key="CommitChangelistDialog2" timestamp="1600254703590">
++    <state x="53" y="0" key="CommitChangelistDialog2" timestamp="1600352127978">
+       <screen x="0" y="0" width="1067" height="760" />
+     </state>
+-    <state x="157" y="0" key="CommitChangelistDialog2/0.0.1067.760@0.0.1067.760" timestamp="1600254703590" />
++    <state x="53" y="0" key="CommitChangelistDialog2/0.0.1067.760@0.0.1067.760" timestamp="1600352127978" />
++    <state x="93" y="93" width="881" height="575" key="DiffContextDialog" timestamp="1600352291053">
++      <screen x="0" y="0" width="1067" height="760" />
++    </state>
++    <state x="93" y="93" width="881" height="575" key="DiffContextDialog/0.0.1067.760@0.0.1067.760" timestamp="1600352291053" />
+     <state x="314" y="122" key="FileChooserDialogImpl" timestamp="1600332525832">
+       <screen x="0" y="0" width="1067" height="760" />
+     </state>
+@@ -216,18 +235,18 @@
+       <screen x="0" y="0" width="1067" height="760" />
+     </state>
+     <state x="368" y="101" key="RollbackChangesDialog/0.0.1067.760@0.0.1067.760" timestamp="1600176174180" />
+-    <state x="126" y="114" key="Vcs.Push.Dialog.v2" timestamp="1600254038971">
++    <state x="126" y="114" key="Vcs.Push.Dialog.v2" timestamp="1600352258207">
+       <screen x="0" y="0" width="1067" height="760" />
+     </state>
+-    <state x="126" y="114" key="Vcs.Push.Dialog.v2/0.0.1067.760@0.0.1067.760" timestamp="1600254038971" />
++    <state x="126" y="114" key="Vcs.Push.Dialog.v2/0.0.1067.760@0.0.1067.760" timestamp="1600352258207" />
+     <state x="93" y="93" width="881" height="575" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600176447707">
+       <screen x="0" y="0" width="1067" height="760" />
+     </state>
+     <state x="93" y="93" width="881" height="575" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1067.760@0.0.1067.760" timestamp="1600176447707" />
+-    <state x="351" y="295" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600254092597">
++    <state x="351" y="295" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600352172192">
+       <screen x="0" y="0" width="1067" height="760" />
+     </state>
+-    <state x="351" y="295" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1067.760@0.0.1067.760" timestamp="1600254092597" />
++    <state x="351" y="295" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1067.760@0.0.1067.760" timestamp="1600352172192" />
+     <state x="190" y="171" key="run.anything.popup" timestamp="1600346048498">
+       <screen x="0" y="0" width="1067" height="760" />
+     </state>

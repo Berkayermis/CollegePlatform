@@ -6,13 +6,13 @@ use App\Repository\UserRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-use Serializable;
+use JsonSerializable;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
  */
-class User implements UserInterface , Serializable
+class User implements UserInterface , JsonSerializable
 {
     /**
      * @ORM\Id
@@ -103,42 +103,6 @@ class User implements UserInterface , Serializable
         return $this;
     }
 
-    /**
-     * @see UserInterface
-     */
-    public function getSalt()
-    {
-        // not needed when using the "bcrypt" algorithm in security.yaml
-    }
-
-    /**
-     * @see UserInterface
-     */
-    public function eraseCredentials()
-    {
-        // If you store any temporary, sensitive data on the user, clear it here
-        // $this->plainPassword = null;
-    }
-
-    public function serialize()
-    {
-        return serialize([
-            $this->id,
-            $this->email,
-            $this->roles,
-            $this->password
-        ]);
-    }
-
-    public function unserialize($serialized)
-    {
-        list(
-            $this->id,
-            $this->email,
-            $this->roles,
-            $this->password
-            )=unserialize($serialized,['allowed_classes'=>false]);
-    }
 
     /**
      * @return Collection|Title[]
@@ -169,5 +133,33 @@ class User implements UserInterface , Serializable
         }
 
         return $this;
+    }
+
+    /**
+     * @see UserInterface
+     */
+    public function getSalt()
+    {
+        // not needed when using the "bcrypt" algorithm in security.yaml
+    }
+
+    /**
+     * @see UserInterface
+     */
+    public function eraseCredentials()
+    {
+        // If you store any temporary, sensitive data on the user, clear it here
+        // $this->plainPassword = null;
+    }
+
+
+    public function jsonSerialize()
+    {
+        return [
+            "email"=> $this->getUsername(),
+            "password" => $this->getPassword(),
+            "roles" => $this->getRoles(),
+            "titles" => $this->getTitles()
+        ];
     }
 }

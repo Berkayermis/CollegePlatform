@@ -1,3 +1,12 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+all_titles:
+  path: /titles/{id}
+  controller: App\Controller\TitleController::getTitles
+  methods: GET
+
+users:
+  path: /users
+  controller: App\Controller\SecurityController::getUsers
