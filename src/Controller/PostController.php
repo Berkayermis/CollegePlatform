@@ -2,8 +2,8 @@
 
 namespace App\Controller;
 
-use App\Entity\Title;
-use App\Form\TitleType;
+use App\Entity\Posts;
+use App\Form\PostType;
 use DateTimeImmutable;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class TitleController extends AbstractController
+class PostController extends AbstractController
 {
     /**
      * @Route ("/form",name="app_form")
@@ -20,38 +20,39 @@ class TitleController extends AbstractController
      */
     public function new(Request $request){
 
-        $title = new Title();
-        $title->setTitle('');
-        $title->setBody('');
-        $title->setUserID($this->getUser());
-        $title->setDateTime(new DateTimeImmutable());
-        $form = $this->createForm(TitleType::class,$title);
+        $post = new Posts();
+        $post->setTitle('');
+        $post->setBody('');
+        $post->setUserID($this->getUser());
+        $post->setDateTime(new DateTimeImmutable());
+        $form = $this->createForm(PostType::class,$post);
 
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
-            $title = $form->getData();
+            $post = $form->getData();
             $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($title);
+            $entityManager->persist($post);
             $entityManager->flush();
             return $this->redirectToRoute('app_form');
         }
         return $this->render('title/index.html.twig',[
-            'title_form' => $form->createView(),
-            'titleOfForm' => $title->getTitle()
+            'title_form' => $form->createView()
         ]);
 
     }
 
 
-
     /**
-     * @Route ("/titles/{id}",name="all_titles",methods={"GET"})
-     * @param $id
-     * @return JsonResponse
+     * @Route ("/titles/{slug}",name="all_titles")
+     * @param $slug
+     * @return Response
      */
-    public function getTitles($id){
-        $data = $this->getDoctrine()->getRepository(Title::class);
-        return $this->response((array)$data->find($id)->getTitle());
+    public function allTitles($slug){
+        $data = $this->getDoctrine()->getRepository(Posts::class)->findAll();
+        return $this->render('allTitles/titles.html.twig',[
+            'titles' => ucwords(str_replace('%20','-',$slug)),
+            'Data' => $data,
+        ]);
     }
 
 

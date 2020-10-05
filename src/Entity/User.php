@@ -22,7 +22,13 @@ class User implements UserInterface , JsonSerializable
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=180, unique=true)
+     * @ORM\Column(type="string", length=30, unique=true)
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $username;
+
+    /**
+     * @ORM\Column(type="string", length=50, unique=true)
      */
     private $email;
 
@@ -37,7 +43,8 @@ class User implements UserInterface , JsonSerializable
     private $password;
 
     /**
-     * @ORM\OneToMany(targetEntity=Title::class, mappedBy="userID")
+     * @ORM\OneToMany(targetEntity=Posts::class, mappedBy="user_id")
+     * @ORM\JoinColumn(nullable=true)
      */
     private $titles;
 
@@ -52,10 +59,17 @@ class User implements UserInterface , JsonSerializable
     }
 
 
+    /**
+     * @return mixed
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
     public function setEmail(string $email): self
     {
         $this->email = $email;
-
         return $this;
     }
 
@@ -66,7 +80,13 @@ class User implements UserInterface , JsonSerializable
      */
     public function getUsername(): string
     {
-        return (string) $this->email;
+        return (string) $this->username;
+    }
+
+    public function setUsername($username):self
+    {
+        $this->username = $username;
+        return $this;
     }
 
     /**
@@ -105,14 +125,24 @@ class User implements UserInterface , JsonSerializable
 
 
     /**
-     * @return Collection|Title[]
+     * @return Collection|Posts[]
      */
     public function getTitles(): Collection
     {
         return $this->titles;
     }
 
-    public function addTitle(Title $title): self
+    /**
+     * @return Collection|Posts[]
+     */
+    public function getData(){
+        foreach ($this->getTitles() as $title){
+            return $title;
+        }
+        return $this->titles;
+    }
+
+    public function addTitle(Posts $title): self
     {
         if (!$this->titles->contains($title)) {
             $this->titles[] = $title;
@@ -122,7 +152,7 @@ class User implements UserInterface , JsonSerializable
         return $this;
     }
 
-    public function removeTitle(Title $title): self
+    public function removeTitle(Posts $title): self
     {
         if ($this->titles->contains($title)) {
             $this->titles->removeElement($title);
@@ -156,7 +186,9 @@ class User implements UserInterface , JsonSerializable
     public function jsonSerialize()
     {
         return [
-            "email"=> $this->getUsername(),
+            "id"=>$this->getId(),
+            "email"=> $this->getEmail(),
+            "username"=>$this->getUsername(),
             "password" => $this->getPassword(),
             "roles" => $this->getRoles(),
             "titles" => $this->getTitles()

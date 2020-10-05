@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Repository\UserRepository;
+use App\Repository\PostRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
@@ -28,12 +28,13 @@ class SecurityController extends AbstractController
 
     /**
      * @Route ("/",name="index")
+     * @param PostRepository $titleRepository
      * @return Response
      */
-    public function index(){
-
+    public function index(PostRepository $titleRepository){
+        $titles = $titleRepository->findAll();
        return $this->render('homepage/homepage.html.twig',[
-
+            'all_data' => $titles
        ]);
     }
 

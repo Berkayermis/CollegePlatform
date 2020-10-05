@@ -31,6 +31,7 @@ class RegisterUserCommand extends Command
     protected function configure()
     {
         $this
+            ->addArgument('username',InputArgument::REQUIRED,'username')
             ->addArgument('email',InputArgument::REQUIRED,'email')
             ->addArgument('password',InputArgument::REQUIRED,'password')
             ->setDescription('Creates a new user.')
@@ -48,10 +49,12 @@ class RegisterUserCommand extends Command
 
 
         $user = new User();
+        $user->setUsername($input->getArgument('username'));
         $user->setEmail($input->getArgument('email'));
         $user->setPassword($this->encoder->encodePassword($user,$input->getArgument('password')));
         $this->em->persist($user);
         $this->em->flush();
+        $output->writeln('username: '.$input->getArgument('username'));
         $output->writeln('email: '.$input->getArgument('email'));
         $output->writeln('password: '.$input->getArgument('password'));
         $output->writeln('User registered successfully.');

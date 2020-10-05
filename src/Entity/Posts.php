@@ -2,15 +2,17 @@
 
 namespace App\Entity;
 
-use App\Repository\TitleRepository;
+use App\Repository\PostRepository;
 use DateTimeInterface;
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\Table;
 use JsonSerializable;
 
 /**
- * @ORM\Entity(repositoryClass=TitleRepository::class)
+ * @ORM\Entity(repositoryClass=PostRepository::class)
+ * @Table("Posts")
  */
-class Title implements JsonSerializable
+class Posts implements JsonSerializable
 {
     /**
      * @ORM\Id
@@ -32,13 +34,15 @@ class Title implements JsonSerializable
     /**
      * @ORM\Column(type="datetime_immutable")
      */
-    private $DateTime;
+    private $created_date;
 
     /**
      * @ORM\ManyToOne(targetEntity=User::class, inversedBy="titles")
      * @ORM\JoinColumn(nullable=false)
      */
-    private $userID;
+    private $user_id;
+
+
 
     public function getId(): ?int
     {
@@ -71,24 +75,24 @@ class Title implements JsonSerializable
 
     public function getDateTime(): ?DateTimeInterface
     {
-        return $this->DateTime;
+        return $this->created_date;
     }
 
     public function setDateTime(DateTimeInterface $DateTime): self
     {
-        $this->DateTime = $DateTime;
+        $this->created_date = $DateTime;
 
         return $this;
     }
 
     public function getUserID(): ?User
     {
-        return $this->userID;
+        return $this->user_id;
     }
 
     public function setUserID(?User $userID): self
     {
-        $this->userID = $userID;
+        $this->user_id = $userID;
 
         return $this;
     }
@@ -97,10 +101,11 @@ class Title implements JsonSerializable
     public function jsonSerialize()
     {
         return [
+            "id"=>$this->getId(),
             "title" => $this->getTitle(),
             "body" => $this->getBody(),
-            "DateTime"=>$this->getDateTime(),
-            "userID" => $this->getUserID()
+            "created_time"=>$this->getDateTime(),
+            "user_id" => $this->getUserID()
         ];
     }
 }
