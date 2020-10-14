@@ -33,19 +33,10 @@
 
     <div class="container">
         {% if app.user %} Welcome {{ app.user.username }}  {% endif %}
-        {% if not app.user %} Please register or go home {% endif %}
+        {% if not app.user %} Please register {% endif %}
         <br><br>
         <h3>gündem</h3> <br>
 
-
-        <ul>
-            {% for title in all_data %}
-                <div style="max-width: 500px">
-                <a href="{{ path('all_titles',{slug:title.title}) }}"><li class="mt-1">{{ title.title }}</li></a>
-                    <div>{{ title.userID.username }}</div>
-                </div>
-            {% endfor %}
-        </ul>
 
 
     </div>

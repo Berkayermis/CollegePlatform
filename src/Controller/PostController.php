@@ -20,10 +20,12 @@ class PostController extends AbstractController
      */
     public function new(Request $request){
 
+
         $post = new Posts();
-        $post->setTitle('');
+        $post->setName('');
         $post->setBody('');
-        $post->setUserID($this->getUser());
+        $post->setSlug('');
+        $post->setUser($this->getUser());
         $post->setDateTime(new DateTimeImmutable());
         $form = $this->createForm(PostType::class,$post);
 

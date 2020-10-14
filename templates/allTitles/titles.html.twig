@@ -1,0 +1,57 @@
+{% extends 'homepage/homepage.html.twig' %}
+
+{% block title %}{{ titles }}{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <div style="box-shadow: 2px 3px 9px 4px rgba(0,0,0,0.04);">
+                    <div class="q-container-show p-4">
+                        <div class="row">
+                            <div class="col">
+                                <h1 class="q-title-show">
+                                    {{ titles }}
+                                </h1>
+                                <div class="q-display p-3">
+                                    <i class="fa fa-quote-left mr-3"></i>
+                                    <p class="d-inline">
+
+                                    </p>
+                                    <p class="pt-4">
+                                        <strong>
+                                            {% for kullanici in Data %}
+                                                {{ kullanici.userID.username }}
+                                            {% endfor %}
+                                        </strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between my-4">
+            <h2 class="">Answers</h2>
+            <button class="btn btn-sm btn-primary">Submit an Answer</button>
+        </div>
+
+
+
+        <ul class="list-unstyled">
+            {% for title in titles %}
+                <li class="mb-4">
+                    <div class="d-flex justify-content-center">
+                        <div class="mr-3 pt-2">
+                            {{ title }}
+                            <p>-- Mallory</p>
+                        </div>
+
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

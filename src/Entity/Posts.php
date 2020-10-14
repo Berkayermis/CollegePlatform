@@ -12,7 +12,7 @@ use JsonSerializable;
  * @ORM\Entity(repositoryClass=PostRepository::class)
  * @Table("Posts")
  */
-class Posts implements JsonSerializable
+class Posts extends Threads implements JsonSerializable
 {
     /**
      * @ORM\Id
@@ -20,11 +20,6 @@ class Posts implements JsonSerializable
      * @ORM\Column(type="integer")
      */
     private $id;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $title;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -40,26 +35,35 @@ class Posts implements JsonSerializable
      * @ORM\ManyToOne(targetEntity=User::class, inversedBy="titles")
      * @ORM\JoinColumn(nullable=false)
      */
-    private $user_id;
+    private $user;
+
+    /**
+     * @ORM\ManyToOne (targetEntity="App\Entity\Threads",inversedBy="id")
+     */
+    private $thread_id;
 
 
+    /**
+     * @return mixed
+     */
+    public function getThreadId()
+    {
+        return $this->thread_id;
+    }
+
+    /**
+     * @param mixed $thread_id
+     */
+    public function setThreadId($thread_id): void
+    {
+        $this->thread_id = $thread_id;
+    }
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getTitle(): ?string
-    {
-        return $this->title;
-    }
-
-    public function setTitle(string $title): self
-    {
-        $this->title = $title;
-
-        return $this;
-    }
 
     public function getBody(): ?string
     {
@@ -85,27 +89,32 @@ class Posts implements JsonSerializable
         return $this;
     }
 
-    public function getUserID(): ?User
+    /**
+     * @return mixed
+     */
+    public function getUser()
     {
-        return $this->user_id;
+        return $this->user;
     }
 
-    public function setUserID(?User $userID): self
+    /**
+     * @param mixed $user
+     */
+    public function setUser($user): void
     {
-        $this->user_id = $userID;
-
-        return $this;
+        $this->user = $user;
     }
+
 
 
     public function jsonSerialize()
     {
         return [
             "id"=>$this->getId(),
-            "title" => $this->getTitle(),
             "body" => $this->getBody(),
             "created_time"=>$this->getDateTime(),
-            "user_id" => $this->getUserID()
+            "user" => $this->getUser(),
+            "thread_id" => $this->getThreadId()
         ];
     }
 }

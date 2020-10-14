@@ -30,21 +30,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fce8d58f-d38e-4af2-81df-2225a4c96d20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_9_2020_17_20_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_9_2020_17_20__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/RegisterUserCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/RegisterUserCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/TitleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Title.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Posts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console.sql" beforeDir="false" afterPath="$PROJECT_DIR$/console.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Posts.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/TitleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PostType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/TitleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/PostRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/PostType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PostType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/homepage/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/homepage/homepage.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/title/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/title/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,8 +153,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/rest_api" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Muhabermis\project01" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -184,6 +183,10 @@
       <workItem from="1601536605329" duration="4172000" />
       <workItem from="1601626092576" duration="2056000" />
       <workItem from="1601923623030" duration="7405000" />
+      <workItem from="1601973736428" duration="1976000" />
+      <workItem from="1602227032281" duration="4084000" />
+      <workItem from="1602571617504" duration="6739000" />
+      <workItem from="1602660149792" duration="4750000" />
     </task>
     <task id="LOCAL-00001" summary="Upgraded MakerBundle &amp; added Security">
       <created>1600079399881</created>
@@ -269,14 +272,18 @@
       <screen x="0" y="0" width="1067" height="760" />
     </state>
     <state x="344" y="260" key="#Composer/0.0.1067.760@0.0.1067.760" timestamp="1600077549357" />
+    <state x="0" y="222" key="#SQL_Dialects" timestamp="1602572664115">
+      <screen x="0" y="0" width="1067" height="760" />
+    </state>
+    <state x="0" y="222" key="#SQL_Dialects/0.0.1067.760@0.0.1067.760" timestamp="1602572664115" />
     <state x="163" y="0" width="814" height="731" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600871303363">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
     <state x="163" y="0" width="814" height="731" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1067.760@0.0.1067.760" timestamp="1600871303363" />
-    <state x="339" y="63" key="#com.intellij.ide.util.MemberChooser" timestamp="1601931403871">
+    <state x="527" y="69" key="#com.intellij.ide.util.MemberChooser" timestamp="1602664749944">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state x="339" y="63" key="#com.intellij.ide.util.MemberChooser/0.0.1067.760@0.0.1067.760" timestamp="1601931403871" />
+    <state x="527" y="69" key="#com.intellij.ide.util.MemberChooser/0.0.1067.760@0.0.1067.760" timestamp="1602664749944" />
     <state x="243" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601923656975">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
@@ -289,14 +296,18 @@
       <screen x="0" y="0" width="1067" height="760" />
     </state>
     <state x="53" y="0" key="CommitChangelistDialog2/0.0.1067.760@0.0.1067.760" timestamp="1600691522583" />
+    <state x="214" y="136" key="DUMP_DIALOG_DIMENSION_KEY" timestamp="1601985030514">
+      <screen x="0" y="0" width="1067" height="760" />
+    </state>
+    <state x="214" y="136" key="DUMP_DIALOG_DIMENSION_KEY/0.0.1067.760@0.0.1067.760" timestamp="1601985030514" />
     <state x="93" y="93" width="881" height="575" key="DiffContextDialog" timestamp="1600779869027">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
     <state x="93" y="93" width="881" height="575" key="DiffContextDialog/0.0.1067.760@0.0.1067.760" timestamp="1600779869027" />
-    <state x="314" y="122" key="FileChooserDialogImpl" timestamp="1601925538051">
+    <state x="314" y="122" key="FileChooserDialogImpl" timestamp="1602572295706">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state x="314" y="122" key="FileChooserDialogImpl/0.0.1067.760@0.0.1067.760" timestamp="1601925538051" />
+    <state x="314" y="122" key="FileChooserDialogImpl/0.0.1067.760@0.0.1067.760" timestamp="1602572295706" />
     <state x="413" y="279" key="Github.ShareDialog" timestamp="1600330920577">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
@@ -305,26 +316,26 @@
       <screen x="0" y="0" width="1067" height="760" />
     </state>
     <state x="337" y="79" key="Github.UntrackedFilesDialog/0.0.1067.760@0.0.1067.760" timestamp="1600078059182" />
-    <state width="695" height="281" key="GridCell.Tab.0.bottom" timestamp="1600871462629">
+    <state width="975" height="199" key="GridCell.Tab.0.bottom" timestamp="1602236025260">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state width="695" height="281" key="GridCell.Tab.0.bottom/0.0.1067.760@0.0.1067.760" timestamp="1600871462629" />
-    <state width="695" height="281" key="GridCell.Tab.0.center" timestamp="1600871462628">
+    <state width="975" height="199" key="GridCell.Tab.0.bottom/0.0.1067.760@0.0.1067.760" timestamp="1602236025260" />
+    <state width="975" height="199" key="GridCell.Tab.0.center" timestamp="1602236025260">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state width="695" height="281" key="GridCell.Tab.0.center/0.0.1067.760@0.0.1067.760" timestamp="1600871462628" />
-    <state width="695" height="281" key="GridCell.Tab.0.left" timestamp="1600871462628">
+    <state width="975" height="199" key="GridCell.Tab.0.center/0.0.1067.760@0.0.1067.760" timestamp="1602236025260" />
+    <state width="975" height="199" key="GridCell.Tab.0.left" timestamp="1602236025260">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state width="695" height="281" key="GridCell.Tab.0.left/0.0.1067.760@0.0.1067.760" timestamp="1600871462628" />
-    <state width="695" height="281" key="GridCell.Tab.0.right" timestamp="1600871462628">
+    <state width="975" height="199" key="GridCell.Tab.0.left/0.0.1067.760@0.0.1067.760" timestamp="1602236025260" />
+    <state width="975" height="199" key="GridCell.Tab.0.right" timestamp="1602236025260">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state width="695" height="281" key="GridCell.Tab.0.right/0.0.1067.760@0.0.1067.760" timestamp="1600871462628" />
-    <state width="198" height="457" key="HiddenNamespacesPopup" timestamp="1600870965696">
+    <state width="975" height="199" key="GridCell.Tab.0.right/0.0.1067.760@0.0.1067.760" timestamp="1602236025260" />
+    <state width="198" height="457" key="HiddenNamespacesPopup" timestamp="1601984992383">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state width="198" height="457" key="HiddenNamespacesPopup/0.0.1067.760@0.0.1067.760" timestamp="1600870965696" />
+    <state width="198" height="457" key="HiddenNamespacesPopup/0.0.1067.760@0.0.1067.760" timestamp="1601984992383" />
     <state x="336" y="104" key="NewPhpClassDialog" timestamp="1600095441447">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
@@ -349,9 +360,9 @@
       <screen x="0" y="0" width="1067" height="760" />
     </state>
     <state x="190" y="171" key="run.anything.popup/0.0.1067.760@0.0.1067.760" timestamp="1600346048498" />
-    <state x="196" y="81" width="672" height="678" key="search.everywhere.popup" timestamp="1601940346259">
+    <state x="196" y="81" width="672" height="678" key="search.everywhere.popup" timestamp="1602230823241">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state x="196" y="81" width="672" height="678" key="search.everywhere.popup/0.0.1067.760@0.0.1067.760" timestamp="1601940346259" />
+    <state x="196" y="81" width="672" height="678" key="search.everywhere.popup/0.0.1067.760@0.0.1067.760" timestamp="1602230823241" />
   </component>
 </project>

@@ -43,7 +43,7 @@ class User implements UserInterface , JsonSerializable
     private $password;
 
     /**
-     * @ORM\OneToMany(targetEntity=Posts::class, mappedBy="user_id")
+     * @ORM\OneToMany(targetEntity=Posts::class, mappedBy="user")
      * @ORM\JoinColumn(nullable=true)
      */
     private $titles;
