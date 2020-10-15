@@ -22,7 +22,8 @@
         "symfony/yaml": "5.1.*",
       "ext-cassandra": "*",
       "ext-couchbase": "*",
-      "ext-json": "*"
+      "ext-json": "*",
+      "ext-pthreads": "*"
     },
     "require-dev": {
         "symfony/maker-bundle": "^1.21",

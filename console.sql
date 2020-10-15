@@ -50,11 +50,11 @@ CREATE TABLE ThreadUserFollows (
 
 SHOW CREATE TABLE posts;
 
-ALTER TABLE posts DROP FOREIGN KEY FK_499C95FEA76ED395 ;
+ALTER TABLE posts DROP FOREIGN KEY F ;
 ALTER TABLE posts ADD FOREIGN KEY (category_id) REFERENCES categories(id);
 ALTER TABLE posts ADD FOREIGN KEY (user_id_id) REFERENCES user(id);
 ALTER TABLE messages ADD FOREIGN KEY (to_user_id) REFERENCES user(id);
-        ALTER TABLE threaduserfollows ADD FOREIGN KEY (user_id) REFERENCES user(id);
+ALTER TABLE threaduserfollows ADD FOREIGN KEY (user_id) REFERENCES user(id);
 ALTER TABLE posts ADD FOREIGN KEY (user_id_id) REFERENCES user(id);
 ALTER TABLE threaduserfollows ADD FOREIGN KEY (user_id) REFERENCES user(id);
 ALTER TABLE messages ADD PRIMARY KEY (id);

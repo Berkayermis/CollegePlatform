@@ -34,10 +34,9 @@ class Threads
     private $created_date;
 
     /**
-     * @ORM\Column(type="integer")
      * @ORM\ManyToOne (targetEntity="App\Entity\Categories",inversedBy="id")
      */
-    private $category_id;
+    private $category;
 
 
     public function getId(): ?int
@@ -62,7 +61,7 @@ class Threads
         return $this->slug;
     }
 
-    public function setSlug(string $slug): self
+    public function setSlugOfThread(string $slug): self
     {
         $this->slug = $slug;
 
@@ -83,12 +82,12 @@ class Threads
 
     public function getCategoryId(): ?int
     {
-        return $this->category_id;
+        return $this->category;
     }
 
     public function setCategoryId(int $category_id): self
     {
-        $this->category_id = $category_id;
+        $this->category = $category_id;
 
         return $this;
     }

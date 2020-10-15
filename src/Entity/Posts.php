@@ -6,13 +6,12 @@ use App\Repository\PostRepository;
 use DateTimeInterface;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\ORM\Mapping\Table;
-use JsonSerializable;
 
 /**
  * @ORM\Entity(repositoryClass=PostRepository::class)
  * @Table("Posts")
  */
-class Posts extends Threads implements JsonSerializable
+class Posts
 {
     /**
      * @ORM\Id
@@ -39,8 +38,9 @@ class Posts extends Threads implements JsonSerializable
 
     /**
      * @ORM\ManyToOne (targetEntity="App\Entity\Threads",inversedBy="id")
+     * @ORM\JoinColumn(nullable=false)
      */
-    private $thread_id;
+    private $thread;
 
 
     /**
@@ -48,7 +48,7 @@ class Posts extends Threads implements JsonSerializable
      */
     public function getThreadId()
     {
-        return $this->thread_id;
+        return $this->thread;
     }
 
     /**
@@ -56,7 +56,7 @@ class Posts extends Threads implements JsonSerializable
      */
     public function setThreadId($thread_id): void
     {
-        $this->thread_id = $thread_id;
+        $this->thread = $thread_id;
     }
 
     public function getId(): ?int
@@ -106,15 +106,4 @@ class Posts extends Threads implements JsonSerializable
     }
 
 
-
-    public function jsonSerialize()
-    {
-        return [
-            "id"=>$this->getId(),
-            "body" => $this->getBody(),
-            "created_time"=>$this->getDateTime(),
-            "user" => $this->getUser(),
-            "thread_id" => $this->getThreadId()
-        ];
-    }
 }

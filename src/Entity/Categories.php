@@ -14,6 +14,7 @@ class Categories
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @ORM\OneToMany (targetEntity="App\Entity\Threads",mappedBy="category")
      */
     private $id;
 
@@ -54,5 +55,14 @@ class Categories
         $this->slug = $slug;
 
         return $this;
+    }
+
+    public function jsonSerialize()
+    {
+        return [
+            "id" => $this->getId(),
+            "title" => $this->getTitle(),
+            "slug" => $this->getSlug()
+        ];
     }
 }

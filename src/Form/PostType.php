@@ -4,12 +4,11 @@ namespace App\Form;
 
 use App\Entity\Categories;
 use App\Entity\Posts;
-use Doctrine\DBAL\Types\TextType;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\ChoiceList\ChoiceList;
-use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -18,16 +17,14 @@ class PostType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('category',ChoiceType::class, [
-                'choice_label' => [ ChoiceList::attr($this,function (?Categories $categories){
-                    return $categories ? ['data-uuid'=>$categories->getTitle()]: [];
-                })
-                ]
+            ->add('title',EntityType::class,[
+                'class' => Categories::class,
+                'choice_label' => 'title',
             ])
-            ->add('name',TextType::class,[
-                'attr'=> [
-                    'placeholder' => 'Type the title..'
-                ]
+            ->add('name', TextType::class,[
+                'attr' => [
+                    'placeholder' => 'sss'
+                ],
             ])
             ->add('body', TextareaType::class,[
                 'attr' => [

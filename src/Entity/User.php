@@ -146,7 +146,7 @@ class User implements UserInterface , JsonSerializable
     {
         if (!$this->titles->contains($title)) {
             $this->titles[] = $title;
-            $title->setUserID($this);
+            $title->setUser($this);
         }
 
         return $this;
@@ -157,8 +157,8 @@ class User implements UserInterface , JsonSerializable
         if ($this->titles->contains($title)) {
             $this->titles->removeElement($title);
             // set the owning side to null (unless already changed)
-            if ($title->getUserID() === $this) {
-                $title->setUserID(null);
+            if ($title->getUser() === $this) {
+                $title->setUser(null);
             }
         }
 

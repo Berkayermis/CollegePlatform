@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Categories;
 use App\Entity\Posts;
 use App\Form\PostType;
 use DateTimeImmutable;
@@ -20,13 +21,15 @@ class PostController extends AbstractController
      */
     public function new(Request $request){
 
+        $category = new Categories();
 
         $post = new Posts();
         $post->setName('');
         $post->setBody('');
-        $post->setSlug('');
+        $post->setTitle($category->getTitle());
         $post->setUser($this->getUser());
         $post->setDateTime(new DateTimeImmutable());
+
         $form = $this->createForm(PostType::class,$post);
 
         $form->handleRequest($request);
