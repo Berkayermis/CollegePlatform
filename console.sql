@@ -1,7 +1,7 @@
 SELECT *
 FROM user;
 
--- Categories Table --
+-- Category Table --
 CREATE TABLE Categories (
     id int,
     name varchar(50),
@@ -10,7 +10,7 @@ CREATE TABLE Categories (
 
 );
 
--- Threads Table --
+-- Thread Table --
 CREATE TABLE Threads (
     id int,
     name varchar(50),
@@ -24,7 +24,7 @@ CREATE TABLE Threads (
 ALTER TABLE posts ADD thread_id int;
 ALTER TABLE posts ADD FOREIGN KEY (thread_id) REFERENCES threads(id);
 
--- Messages many-to-many table --
+-- Message many-to-many table --
 CREATE TABLE Messages(
     id int,
     title varchar(40),

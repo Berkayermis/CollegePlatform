@@ -5,11 +5,13 @@ namespace App\Entity;
 use App\Repository\ThreadsRepository;
 use DateTimeImmutable;
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\Table;
 
 /**
  * @ORM\Entity(repositoryClass=ThreadsRepository::class)
+ * @Table("threads")
  */
-class Threads
+class Thread
 {
     /**
      * @ORM\Id
@@ -34,7 +36,7 @@ class Threads
     private $created_date;
 
     /**
-     * @ORM\ManyToOne (targetEntity="App\Entity\Categories",inversedBy="id")
+     * @ORM\ManyToOne (targetEntity="Category.php",inversedBy="id")
      */
     private $category;
 
@@ -61,7 +63,7 @@ class Threads
         return $this->slug;
     }
 
-    public function setSlugOfThread(string $slug): self
+    public function setSlug(string $slug): self
     {
         $this->slug = $slug;
 
@@ -80,12 +82,12 @@ class Threads
         return $this;
     }
 
-    public function getCategoryId(): ?int
+    public function getCategory(): ?int
     {
         return $this->category;
     }
 
-    public function setCategoryId(int $category_id): self
+    public function setCategory(int $category_id): self
     {
         $this->category = $category_id;
 

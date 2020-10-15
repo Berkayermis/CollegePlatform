@@ -4,17 +4,19 @@ namespace App\Entity;
 
 use App\Repository\CategoriesRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\Table;
 
 /**
  * @ORM\Entity(repositoryClass=CategoriesRepository::class)
+ * @Table("categories")
  */
-class Categories
+class Category
 {
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
-     * @ORM\OneToMany (targetEntity="App\Entity\Threads",mappedBy="category")
+     * @ORM\OneToMany (targetEntity="Thread.php",mappedBy="category")
      */
     private $id;
 

@@ -9,9 +9,9 @@ use Doctrine\ORM\Mapping\Table;
 
 /**
  * @ORM\Entity(repositoryClass=PostRepository::class)
- * @Table("Posts")
+ * @Table("posts")
  */
-class Posts
+class Post
 {
     /**
      * @ORM\Id
@@ -37,7 +37,7 @@ class Posts
     private $user;
 
     /**
-     * @ORM\ManyToOne (targetEntity="App\Entity\Threads",inversedBy="id")
+     * @ORM\ManyToOne (targetEntity="Thread.php",inversedBy="id")
      * @ORM\JoinColumn(nullable=false)
      */
     private $thread;
@@ -100,7 +100,7 @@ class Posts
     /**
      * @param mixed $user
      */
-    public function setUser($user): void
+    public function setUser(User $user): void
     {
         $this->user = $user;
     }

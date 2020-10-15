@@ -2,8 +2,8 @@
 
 namespace App\Controller;
 
-use App\Entity\Categories;
-use App\Entity\Posts;
+use App\Entity\Category;
+use App\Entity\Post;
 use App\Form\PostType;
 use DateTimeImmutable;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -21,9 +21,9 @@ class PostController extends AbstractController
      */
     public function new(Request $request){
 
-        $category = new Categories();
+        $category = new Category();
 
-        $post = new Posts();
+        $post = new Post();
         $post->setName('');
         $post->setBody('');
         $post->setTitle($category->getTitle());
@@ -53,7 +53,7 @@ class PostController extends AbstractController
      * @return Response
      */
     public function allTitles($slug){
-        $data = $this->getDoctrine()->getRepository(Posts::class)->findAll();
+        $data = $this->getDoctrine()->getRepository(Post::class)->findAll();
         return $this->render('allTitles/titles.html.twig',[
             'titles' => ucwords(str_replace('%20','-',$slug)),
             'Data' => $data,

@@ -31,15 +31,12 @@
   <component name="ChangeListManager">
     <list default="true" id="fce8d58f-d38e-4af2-81df-2225a4c96d20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console.sql" beforeDir="false" afterPath="$PROJECT_DIR$/console.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Messages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Posts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/ThreadUserFollows.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/ThreadUserFollows.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Threads.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Threads.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/PostType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PostType.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +186,7 @@
       <workItem from="1602227032281" duration="4084000" />
       <workItem from="1602571617504" duration="6739000" />
       <workItem from="1602660149792" duration="14364000" />
-      <workItem from="1602753151563" duration="1824000" />
+      <workItem from="1602753151563" duration="3052000" />
     </task>
     <task id="LOCAL-00001" summary="Upgraded MakerBundle &amp; added Security">
       <created>1600079399881</created>
@@ -240,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602666380737</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Entity classes updated.">
+      <created>1602755159419</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1602755159419</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +280,9 @@
     <MESSAGE value="Symfony form installed and configured,Relatinship between user and titles was provided." />
     <MESSAGE value="Title slug added." />
     <MESSAGE value="New entity classes were added." />
-    <option name="LAST_COMMIT_MESSAGE" value="New entity classes were added." />
+    <MESSAGE value="Entity classes were updated." />
+    <MESSAGE value="Entity classes updated." />
+    <option name="LAST_COMMIT_MESSAGE" value="Entity classes updated." />
   </component>
   <component name="WindowStateProjectService">
     <state x="344" y="260" key="#Composer" timestamp="1600077549357">
@@ -303,10 +309,10 @@
       <screen x="0" y="0" width="1067" height="760" />
     </state>
     <state x="264" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1067.760@0.0.1067.760" timestamp="1600427707568" />
-    <state x="53" y="0" key="CommitChangelistDialog2" timestamp="1602666378147">
+    <state x="53" y="0" key="CommitChangelistDialog2" timestamp="1602755157105">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state x="53" y="0" key="CommitChangelistDialog2/0.0.1067.760@0.0.1067.760" timestamp="1602666378147" />
+    <state x="53" y="0" key="CommitChangelistDialog2/0.0.1067.760@0.0.1067.760" timestamp="1602755157105" />
     <state x="214" y="136" key="DUMP_DIALOG_DIMENSION_KEY" timestamp="1601985030514">
       <screen x="0" y="0" width="1067" height="760" />
     </state>

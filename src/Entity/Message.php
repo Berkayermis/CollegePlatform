@@ -5,11 +5,13 @@ namespace App\Entity;
 use App\Repository\MessagesRepository;
 use DateTimeImmutable;
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\Table;
 
 /**
  * @ORM\Entity(repositoryClass=MessagesRepository::class)
+ * @Table("messages")
  */
-class Messages
+class Message
 {
     /**
      * @ORM\Id

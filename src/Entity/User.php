@@ -6,11 +6,13 @@ use App\Repository\UserRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\Table;
 use JsonSerializable;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
+ * @Table("users")
  */
 class User implements UserInterface , JsonSerializable
 {
@@ -46,11 +48,11 @@ class User implements UserInterface , JsonSerializable
      * @ORM\OneToMany(targetEntity=Posts::class, mappedBy="user")
      * @ORM\JoinColumn(nullable=true)
      */
-    private $titles;
+    private $posts;
 
     public function __construct()
     {
-        $this->titles = new ArrayCollection();
+        $this->posts = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -125,37 +127,37 @@ class User implements UserInterface , JsonSerializable
 
 
     /**
-     * @return Collection|Posts[]
+     * @return Collection|Post[]
      */
-    public function getTitles(): Collection
+    public function getPosts(): Collection
     {
-        return $this->titles;
+        return $this->posts;
     }
 
     /**
-     * @return Collection|Posts[]
+     * @return Collection|Post[]
      */
     public function getData(){
-        foreach ($this->getTitles() as $title){
+        foreach ($this->getPosts() as $title){
             return $title;
         }
-        return $this->titles;
+        return $this->posts;
     }
 
-    public function addTitle(Posts $title): self
+    public function addPost(Post $post): self
     {
-        if (!$this->titles->contains($title)) {
-            $this->titles[] = $title;
-            $title->setUser($this);
+        if (!$this->posts->contains($post)) {
+            $this->posts[] = $post;
+            $post->setUser($this);
         }
 
         return $this;
     }
 
-    public function removeTitle(Posts $title): self
+    public function removePost(Post $title): self
     {
-        if ($this->titles->contains($title)) {
-            $this->titles->removeElement($title);
+        if ($this->posts->contains($title)) {
+            $this->posts->removeElement($title);
             // set the owning side to null (unless already changed)
             if ($title->getUser() === $this) {
                 $title->setUser(null);
@@ -191,7 +193,7 @@ class User implements UserInterface , JsonSerializable
             "username"=>$this->getUsername(),
             "password" => $this->getPassword(),
             "roles" => $this->getRoles(),
-            "titles" => $this->getTitles()
+            "posts" => $this->getPosts()
         ];
     }
 }

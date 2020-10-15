@@ -4,11 +4,13 @@ namespace App\Entity;
 
 use App\Repository\ThreadUserFollowsRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\Table;
 
 /**
  * @ORM\Entity(repositoryClass=ThreadUserFollowsRepository::class)
+ * @Table("threaduserfollows")
  */
-class ThreadUserFollows
+class ThreadUserFollow
 {
     /**
      * @ORM\Id
@@ -19,7 +21,7 @@ class ThreadUserFollows
 
     /**
      * @ORM\Column(type="integer")
-     * @ORM\ManyToMany(targetEntity="App\Entity\Threads",inversedBy="id")
+     * @ORM\ManyToMany(targetEntity="Thread.php",inversedBy="id")
      */
     private $thread_id;
 

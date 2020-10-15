@@ -2,25 +2,25 @@
 
 namespace App\Repository;
 
-use App\Entity\ThreadUserFollows;
+use App\Entity\ThreadUserFollow;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @method ThreadUserFollows|null find($id, $lockMode = null, $lockVersion = null)
- * @method ThreadUserFollows|null findOneBy(array $criteria, array $orderBy = null)
- * @method ThreadUserFollows[]    findAll()
- * @method ThreadUserFollows[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method ThreadUserFollow|null find($id, $lockMode = null, $lockVersion = null)
+ * @method ThreadUserFollow|null findOneBy(array $criteria, array $orderBy = null)
+ * @method ThreadUserFollow[]    findAll()
+ * @method ThreadUserFollow[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
 class ThreadUserFollowsRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, ThreadUserFollows::class);
+        parent::__construct($registry, ThreadUserFollow::class);
     }
 
     // /**
-    //  * @return ThreadUserFollows[] Returns an array of ThreadUserFollows objects
+    //  * @return ThreadUserFollow[] Returns an array of ThreadUserFollow objects
     //  */
     /*
     public function findByExampleField($value)
@@ -37,7 +37,7 @@ class ThreadUserFollowsRepository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?ThreadUserFollows
+    public function findOneBySomeField($value): ?ThreadUserFollow
     {
         return $this->createQueryBuilder('t')
             ->andWhere('t.exampleField = :val')
