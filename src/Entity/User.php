@@ -20,8 +20,6 @@ class User implements UserInterface , JsonSerializable
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
-     * @ORM\ManyToMany(targetEntity="App\Entity\Message",inversedBy="to_user")
-     * @ORM\ManyToMany(targetEntity="App\Entity\Message",inversedBy="from_user")
      */
     private $id;
 
