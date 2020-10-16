@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping\Table;
 
 /**
  * @ORM\Entity(repositoryClass=ThreadsRepository::class)
- * @Table("threads")
+ * @Table("threadsTable")
  */
 class Thread
 {
@@ -36,12 +36,12 @@ class Thread
     private $created_date;
 
     /**
-     * @ORM\ManyToOne (targetEntity="Category.php",inversedBy="id")
+     * @ORM\ManyToOne (targetEntity="App\Entity\Category",inversedBy="id")
      */
     private $category;
 
 
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -82,14 +82,14 @@ class Thread
         return $this;
     }
 
-    public function getCategory(): ?int
+    public function getCategory(): Category
     {
         return $this->category;
     }
 
-    public function setCategory(int $category_id): self
+    public function setCategory(Category $category): self
     {
-        $this->category = $category_id;
+        $this->category = $category;
 
         return $this;
     }

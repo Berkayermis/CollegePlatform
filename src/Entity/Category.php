@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping\Table;
 
 /**
  * @ORM\Entity(repositoryClass=CategoriesRepository::class)
- * @Table("categories")
+ * @Table("categoriesTable")
  */
 class Category
 {
@@ -16,7 +16,7 @@ class Category
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
-     * @ORM\OneToMany (targetEntity="Thread.php",mappedBy="category")
+     * @ORM\OneToMany (targetEntity="App\Entity\Thread",mappedBy="category")
      */
     private $id;
 
@@ -30,7 +30,7 @@ class Category
      */
     private $slug;
 
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }

@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping\Table;
 
 /**
  * @ORM\Entity(repositoryClass=ThreadUserFollowsRepository::class)
- * @Table("threaduserfollows")
+ * @Table("threaduserfollowsTable")
  */
 class ThreadUserFollow
 {
@@ -20,42 +20,40 @@ class ThreadUserFollow
     private $id;
 
     /**
-     * @ORM\Column(type="integer")
-     * @ORM\ManyToMany(targetEntity="Thread.php",inversedBy="id")
+     * @ORM\ManyToMany(targetEntity="App\Entity\Thread",inversedBy="id")
      */
-    private $thread_id;
+    private $thread;
 
     /**
-     * @ORM\Column(type="integer")
      * @ORM\ManyToMany(targetEntity="App\Entity\User", inversedBy="id")
      */
-    private $user_id;
+    private $user;
 
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
 
-    public function getThreadId(): ?int
+    public function getThread(): Thread
     {
-        return $this->thread_id;
+        return $this->thread;
     }
 
-    public function setThreadId(int $thread_id): self
+    public function setThread(Thread $thread): self
     {
-        $this->thread_id = $thread_id;
+        $this->thread = $thread;
 
         return $this;
     }
 
-    public function getUserId(): ?int
+    public function getUser(): User
     {
-        return $this->user_id;
+        return $this->user;
     }
 
-    public function setUserId(int $user_id): self
+    public function setUser(User $user): self
     {
-        $this->user_id = $user_id;
+        $this->user = $user;
 
         return $this;
     }

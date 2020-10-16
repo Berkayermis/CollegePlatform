@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping\Table;
 
 /**
  * @ORM\Entity(repositoryClass=MessagesRepository::class)
- * @Table("messages")
+ * @Table("messagesTable")
  */
 class Message
 {
@@ -36,18 +36,16 @@ class Message
     private $message_date;
 
     /**
-     * @ORM\Column(type="integer")
      * @ORM\ManyToMany(targetEntity="App\Entity\User",inversedBy="id")
      */
-    private $to_user_id;
+    private $to_user;
 
     /**
-     * @ORM\Column(type="integer")
      * @ORM\ManyToMany (targetEntity="App\Entity\User",inversedBy="id")
      */
-    private $from_user_id;
+    private $from_user;
 
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -88,26 +86,26 @@ class Message
         return $this;
     }
 
-    public function getToUserId(): ?int
+    public function getToUser(): User
     {
-        return $this->to_user_id;
+        return $this->to_user;
     }
 
-    public function setToUserId(int $to_user_id): self
+    public function setToUser(User $to_user): self
     {
-        $this->to_user_id = $to_user_id;
+        $this->to_user = $to_user;
 
         return $this;
     }
 
-    public function getFromUserId(): ?int
+    public function getFromUser(): User
     {
-        return $this->from_user_id;
+        return $this->from_user;
     }
 
-    public function setFromUserId(int $from_user_id): self
+    public function setFromUser(User $from_user): self
     {
-        $this->from_user_id = $from_user_id;
+        $this->from_user = $from_user;
 
         return $this;
     }

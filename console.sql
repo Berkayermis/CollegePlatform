@@ -1,5 +1,5 @@
 SELECT *
-FROM user;
+FROM Messages_user;
 
 -- Category Table --
 CREATE TABLE Categories (
@@ -227,3 +227,6 @@ WHERE month(p.created_date) = month(curdate()) AND year(p.created_date) = year(C
 GROUP BY t.name
 ORDER BY Total_Post DESC
 LIMIT 10;
+
+
+DROP TABLE user;

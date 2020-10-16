@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping\Table;
 
 /**
  * @ORM\Entity(repositoryClass=PostRepository::class)
- * @Table("posts")
+ * @Table("postsTable")
  */
 class Post
 {
@@ -31,13 +31,13 @@ class Post
     private $created_date;
 
     /**
-     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="titles")
+     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="posts")
      * @ORM\JoinColumn(nullable=false)
      */
     private $user;
 
     /**
-     * @ORM\ManyToOne (targetEntity="Thread.php",inversedBy="id")
+     * @ORM\ManyToOne (targetEntity="App\Entity\Thread",inversedBy="id")
      * @ORM\JoinColumn(nullable=false)
      */
     private $thread;
@@ -46,20 +46,20 @@ class Post
     /**
      * @return mixed
      */
-    public function getThreadId()
+    public function getThread(): Thread
     {
         return $this->thread;
     }
 
     /**
-     * @param mixed $thread_id
+     * @param $thread
      */
-    public function setThreadId($thread_id): void
+    public function setThread(Thread $thread): void
     {
-        $this->thread = $thread_id;
+        $this->thread = $thread;
     }
 
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -92,7 +92,7 @@ class Post
     /**
      * @return mixed
      */
-    public function getUser()
+    public function getUser(): User
     {
         return $this->user;
     }

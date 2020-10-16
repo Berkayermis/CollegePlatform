@@ -12,7 +12,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
- * @Table("users")
+ * @Table("usersTable")
  */
 class User implements UserInterface , JsonSerializable
 {
@@ -20,6 +20,8 @@ class User implements UserInterface , JsonSerializable
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @ORM\ManyToMany(targetEntity="App\Entity\Message",inversedBy="to_user")
+     * @ORM\ManyToMany(targetEntity="App\Entity\Message",inversedBy="from_user")
      */
     private $id;
 
@@ -45,7 +47,7 @@ class User implements UserInterface , JsonSerializable
     private $password;
 
     /**
-     * @ORM\OneToMany(targetEntity=Posts::class, mappedBy="user")
+     * @ORM\OneToMany(targetEntity="App\Entity\Post", mappedBy="user")
      * @ORM\JoinColumn(nullable=true)
      */
     private $posts;
@@ -55,11 +57,10 @@ class User implements UserInterface , JsonSerializable
         $this->posts = new ArrayCollection();
     }
 
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
-
 
     /**
      * @return mixed
@@ -124,7 +125,6 @@ class User implements UserInterface , JsonSerializable
 
         return $this;
     }
-
 
     /**
      * @return Collection|Post[]
