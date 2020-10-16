@@ -228,5 +228,7 @@ GROUP BY t.name
 ORDER BY Total_Post DESC
 LIMIT 10;
 
+SHOW CREATE TABLE threaduserfollowstable;
+ALTER TABLE thread_user_follow_user DROP FOREIGN KEY FK_6DD8B73753CCCE57;
 
-DROP TABLE user;
+DROP TABLE threaduserfollowstable ;

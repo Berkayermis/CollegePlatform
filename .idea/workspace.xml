@@ -29,16 +29,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fce8d58f-d38e-4af2-81df-2225a4c96d20" name="Default Changelist" comment="">
+    <list default="true" id="fce8d58f-d38e-4af2-81df-2225a4c96d20" name="Default Changelist" comment="Entity classes completed.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/console.sql" beforeDir="false" afterPath="$PROJECT_DIR$/console.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Message.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Post.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Thread.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Thread.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/ThreadUserFollow.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/ThreadUserFollow.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/ThreadUserFollow.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ThreadUserFollowsRepository.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +189,7 @@
       <workItem from="1602571617504" duration="6739000" />
       <workItem from="1602660149792" duration="14364000" />
       <workItem from="1602753151563" duration="1523000" />
-      <workItem from="1602830482949" duration="6151000" />
+      <workItem from="1602830482949" duration="11724000" />
     </task>
     <task id="LOCAL-00001" summary="Upgraded MakerBundle &amp; added Security">
       <created>1600079399881</created>
@@ -240,7 +240,21 @@
       <option name="project" value="LOCAL" />
       <updated>1602666380737</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Entity classes updated 16.10">
+      <created>1602845400399</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1602845400399</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Entity classes updated 16.10">
+      <created>1602845430634</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1602845430634</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +290,8 @@
     <MESSAGE value="Symfony form installed and configured,Relatinship between user and titles was provided." />
     <MESSAGE value="Title slug added." />
     <MESSAGE value="New entity classes were added." />
-    <option name="LAST_COMMIT_MESSAGE" value="New entity classes were added." />
+    <MESSAGE value="Entity classes updated 16.10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Entity classes updated 16.10" />
   </component>
   <component name="WindowStateProjectService">
     <state x="344" y="260" key="#Composer" timestamp="1600077549357">
@@ -303,10 +318,10 @@
       <screen x="0" y="0" width="1067" height="760" />
     </state>
     <state x="264" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1067.760@0.0.1067.760" timestamp="1600427707568" />
-    <state x="53" y="0" key="CommitChangelistDialog2" timestamp="1602666378147">
+    <state x="53" y="0" key="CommitChangelistDialog2" timestamp="1602852937797">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state x="53" y="0" key="CommitChangelistDialog2/0.0.1067.760@0.0.1067.760" timestamp="1602666378147" />
+    <state x="53" y="0" key="CommitChangelistDialog2/0.0.1067.760@0.0.1067.760" timestamp="1602852937797" />
     <state x="214" y="136" key="DUMP_DIALOG_DIMENSION_KEY" timestamp="1601985030514">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
@@ -327,22 +342,22 @@
       <screen x="0" y="0" width="1067" height="760" />
     </state>
     <state x="337" y="79" key="Github.UntrackedFilesDialog/0.0.1067.760@0.0.1067.760" timestamp="1600078059182" />
-    <state width="975" height="199" key="GridCell.Tab.0.bottom" timestamp="1602236025260">
+    <state width="975" height="98" key="GridCell.Tab.0.bottom" timestamp="1602850778120">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state width="975" height="199" key="GridCell.Tab.0.bottom/0.0.1067.760@0.0.1067.760" timestamp="1602236025260" />
-    <state width="975" height="199" key="GridCell.Tab.0.center" timestamp="1602236025260">
+    <state width="975" height="98" key="GridCell.Tab.0.bottom/0.0.1067.760@0.0.1067.760" timestamp="1602850778120" />
+    <state width="975" height="98" key="GridCell.Tab.0.center" timestamp="1602850778120">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state width="975" height="199" key="GridCell.Tab.0.center/0.0.1067.760@0.0.1067.760" timestamp="1602236025260" />
-    <state width="975" height="199" key="GridCell.Tab.0.left" timestamp="1602236025260">
+    <state width="975" height="98" key="GridCell.Tab.0.center/0.0.1067.760@0.0.1067.760" timestamp="1602850778120" />
+    <state width="975" height="98" key="GridCell.Tab.0.left" timestamp="1602850778120">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state width="975" height="199" key="GridCell.Tab.0.left/0.0.1067.760@0.0.1067.760" timestamp="1602236025260" />
-    <state width="975" height="199" key="GridCell.Tab.0.right" timestamp="1602236025260">
+    <state width="975" height="98" key="GridCell.Tab.0.left/0.0.1067.760@0.0.1067.760" timestamp="1602850778120" />
+    <state width="975" height="98" key="GridCell.Tab.0.right" timestamp="1602850778120">
       <screen x="0" y="0" width="1067" height="760" />
     </state>
-    <state width="975" height="199" key="GridCell.Tab.0.right/0.0.1067.760@0.0.1067.760" timestamp="1602236025260" />
+    <state width="975" height="98" key="GridCell.Tab.0.right/0.0.1067.760@0.0.1067.760" timestamp="1602850778120" />
     <state width="198" height="457" key="HiddenNamespacesPopup" timestamp="1601984992383">
       <screen x="0" y="0" width="1067" height="760" />
     </state>

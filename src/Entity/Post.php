@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping\Table;
 
 /**
  * @ORM\Entity(repositoryClass=PostRepository::class)
- * @Table("postsTable")
+ * @Table("posts")
  */
 class Post
 {

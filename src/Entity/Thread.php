@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping\Table;
 
 /**
  * @ORM\Entity(repositoryClass=ThreadsRepository::class)
- * @Table("threadsTable")
+ * @Table("threads")
  */
 class Thread
 {
@@ -39,6 +39,27 @@ class Thread
      * @ORM\ManyToOne (targetEntity="App\Entity\Category",inversedBy="id")
      */
     private $category;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="App\Entity\User",inversedBy="id")
+     */
+    private $followingUser;
+
+    /**
+     * @return mixed
+     */
+    public function getFollowingUser(): User
+    {
+        return $this->followingUser;
+    }
+
+    /**
+     * @param mixed $followingUser
+     */
+    public function setFollowingUser(User $followingUser): void
+    {
+        $this->followingUser = $followingUser;
+    }
 
 
     public function getId(): int

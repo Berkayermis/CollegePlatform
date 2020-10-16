@@ -12,7 +12,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
- * @Table("usersTable")
+ * @Table("users")
  */
 class User implements UserInterface , JsonSerializable
 {
@@ -50,9 +50,32 @@ class User implements UserInterface , JsonSerializable
      */
     private $posts;
 
+    /**
+     * @ORM\ManyToMany (targetEntity="App\Entity\Thread",inversedBy="id")
+     */
+    private $followedThreads;
+
+
+
     public function __construct()
     {
         $this->posts = new ArrayCollection();
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFollowedThreads() : Thread
+    {
+        return $this->followedThreads;
+    }
+
+    /**
+     * @param mixed $followedThreads
+     */
+    public function setFollowedThreads(Thread $followedThreads): void
+    {
+        $this->followedThreads = $followedThreads;
     }
 
     public function getId(): int

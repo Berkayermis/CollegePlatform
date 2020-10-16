@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping\Table;
 
 /**
  * @ORM\Entity(repositoryClass=MessagesRepository::class)
- * @Table("messagesTable")
+ * @Table("messages")
  */
 class Message
 {
@@ -36,12 +36,12 @@ class Message
     private $message_date;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\User",inversedBy="id")
+     * @ORM\ManyToOne (targetEntity="App\Entity\User",inversedBy="id")
      */
     private $to_user;
 
     /**
-     * @ORM\ManyToMany (targetEntity="App\Entity\User",inversedBy="id")
+     * @ORM\ManyToOne (targetEntity="App\Entity\User",inversedBy="id")
      */
     private $from_user;
 
